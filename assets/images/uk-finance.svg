@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#0b2440"/>
+  <g fill="#1c77b2" opacity="0.9">
+    <rect x="220" y="220" width="140" height="220" rx="20"/>
+    <rect x="420" y="180" width="140" height="260" rx="20"/>
+    <rect x="620" y="260" width="140" height="180" rx="20"/>
+    <rect x="820" y="150" width="140" height="290" rx="20"/>
+  </g>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="48" fill="#f7f2da">Capital &amp; Growth</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#c7c3b0">Funding performance delivery</text>
+</svg>

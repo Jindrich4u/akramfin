@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#132a47"/>
+  <g fill="#1a6aa0" opacity="0.9">
+    <rect x="120" y="180" width="240" height="220" rx="20" ry="20"/>
+    <rect x="420" y="140" width="240" height="260" rx="20" ry="20"/>
+    <rect x="720" y="200" width="240" height="200" rx="20" ry="20"/>
+  </g>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="48" fill="#f7f2da">Manufacturing Excellence</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#c7c3b0">Automation, quality, scale</text>
+</svg>

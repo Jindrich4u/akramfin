@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#102743"/>
+  <circle cx="300" cy="350" r="200" fill="#1c6ba0" opacity="0.85"/>
+  <rect x="700" y="200" width="380" height="250" rx="20" ry="20" fill="#1c6ba0" opacity="0.85"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="48" fill="#f7f2da">Automotive Innovation</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#c7c3b0">Precision supply chain delivery</text>
+</svg>

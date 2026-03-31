@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#102c4a"/>
+  <circle cx="600" cy="330" r="150" fill="#1f7f49" opacity="0.85"/>
+  <path d="M520 250 L600 360 L700 260" stroke="#f7f2da" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="48" fill="#f7f2da">ESG &amp; Sustainability</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#c7c3b0">Circular, resilient operations</text>
+</svg>

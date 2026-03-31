@@ -1,0 +1,22 @@
+{
+  "name": "auronex-industrial-web",
+  "version": "1.0.0",
+  "description": "Auronex Industrial Dynamics multi-page manufacturing website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "manufacturing",
+    "industrial",
+    "automation",
+    "structured-finance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "terser": "^5.39.0",
+    "vite": "^6.4.1"
+  }
+}

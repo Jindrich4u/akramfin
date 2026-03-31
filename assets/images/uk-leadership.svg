@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2f52"/>
+      <stop offset="100%" stop-color="#2c5a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#grad)"/>
+  <path d="M150 500 L400 220 L650 520 L900 240 L1050 520" fill="none" stroke="#f7f2da" stroke-width="20" stroke-linecap="round"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="52" fill="#f7f2da">Leadership &amp; Strategy</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#c7c3b0">Guiding teams for efficient execution</text>
+</svg>

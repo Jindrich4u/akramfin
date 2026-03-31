@@ -1,0 +1,38 @@
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+# Build / dist
+dist/
+.build/
+public/
+.cache/
+.vite/
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Generated assets
+*.map
+
+# Ignore compiled assets from any build tooling
+dist/**
+
+# Keep image sources and assets
+!Images/
+!assets/images/

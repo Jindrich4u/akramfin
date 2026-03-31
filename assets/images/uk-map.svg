@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#0f243f"/>
+  <path d="M300 120 C320 150 340 210 360 240 L420 280 L480 250 L540 310 600 280" fill="none" stroke="#f7f2da" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="300" cy="120" r="14" fill="#f7f2da"/>
+  <circle cx="540" cy="310" r="14" fill="#f7f2da"/>
+  <circle cx="780" cy="210" r="14" fill="#f7f2da"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="42" fill="#f7f2da">UK Network</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#c7c3b0">Regional sites and capabilities</text>
+</svg>
