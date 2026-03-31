@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const headerHTML = `
     <header>
       <div class="header-container">
-        <a href="/index.html" class="logo" aria-label="Akramfin home">
-          <img src="/Images/logo.png" alt="Akramfin logo" title="Akramfin" style="height: 48px; width: auto;" />
-          <span class="logo-text">Akramfin</span>
-        </a>
+        <div class="logo" role="link" aria-label="Akramfin home">
+          <img id="siteLogo" src="/Images/logo.png" alt="Akramfin logo" title="Akramfin" style="height: 48px; width: auto;" />
+          <a href="/index.html" class="logo-link"><span class="logo-text">Akramfin</span></a>
+        </div>
         <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
         <nav id="mainNav">
           <ul>
@@ -76,6 +76,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.body.insertAdjacentHTML('afterbegin', headerHTML);
   document.body.insertAdjacentHTML('beforeend', footerHTML);
+
+  // Make the logo image clickable (left-click navigates home) but keep it as a raw image
+  // so users can 'Open image in new tab' and view the PNG directly.
+  const siteLogo = document.getElementById('siteLogo');
+  if (siteLogo) {
+    siteLogo.style.cursor = 'pointer';
+    siteLogo.addEventListener('click', function (e) {
+      // left-click navigates to home
+      window.location.href = '/index.html';
+    });
+  }
 
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const mainNav = document.getElementById('mainNav');

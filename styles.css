@@ -357,7 +357,7 @@ footer {
 .hero {
   background:
     linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35)),
-    url('/Images/Manufacturing%20image.webp') center/cover no-repeat;
+    url('/Images/manufacturing-image.webp') center/cover no-repeat;
   color: var(--color-white);
   padding: 4rem 0;
   border-bottom: var(--border-width) var(--border-style) var(--color-primary);
