@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const headerHTML = `
     <header>
       <div class="header-container">
-        <div class="logo" role="link" aria-label="Akramfin home">
-          <img id="siteLogo" src="/Images/logo.png" alt="Akramfin logo" title="Akramfin" style="height: 48px; width: auto;" />
+        <div class="logo" role="link" aria-label="Akramfin">
+          <img id="siteLogo" src="/Images/logo.png" data-cf-logo="https://akramfin.com/Images/logo.png" alt="" title="Akramfin" style="height: 56px; width: auto;" />
           <a href="/index.html" class="logo-link"><span class="logo-text">Akramfin</span></a>
         </div>
         <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
@@ -78,14 +78,41 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.insertAdjacentHTML('beforeend', footerHTML);
 
   // Make the logo image clickable (left-click navigates home) but keep it as a raw image
-  // so users can 'Open image in new tab' and view the PNG directly.
+  // so users can 'Open image in new tab' and view the PNG directly. Also attempt fallbacks
+  // for deployments (Cloudflare Images URLs or different paths).
   const siteLogo = document.getElementById('siteLogo');
   if (siteLogo) {
     siteLogo.style.cursor = 'pointer';
+    // Click navigates home
     siteLogo.addEventListener('click', function (e) {
-      // left-click navigates to home
       window.location.href = '/index.html';
     });
+
+    // Try alternative sources if the primary fails to load (useful when files are uploaded elsewhere)
+    const fallbackSources = [
+      '/Images/logo.png',
+      'Images/logo.png',
+      '/assets/images/logo.svg',
+      '/logo.png'
+    ];
+
+    let attempt = 0;
+    siteLogo.addEventListener('error', function () {
+      attempt += 1;
+      if (attempt < fallbackSources.length) {
+        siteLogo.src = fallbackSources[attempt];
+        console.warn('siteLogo: trying fallback', fallbackSources[attempt]);
+      } else {
+        console.error('siteLogo: all logo sources failed to load');
+      }
+    });
+
+    // If Cloudflare Images returns a specific URL, you can set data-cf-logo on the <img>
+    // and it will be tried first (useful after uploading to Cloudflare Images).
+    const cfUrl = siteLogo.getAttribute('data-cf-logo');
+    if (cfUrl) {
+      siteLogo.src = cfUrl;
+    }
   }
 
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
